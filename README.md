@@ -93,7 +93,7 @@ https://github.com/HurairaMaqbool/ai-rag-agent
 
 `Node.js` `React.js` `Groq API` `Socket.IO` `JWT` `Redis` `Bull Queues` `FastAPI`
 
-Key highlights:
+**Key highlights:**
 - 🎓 Role-based access — Student / Teacher / Admin
 - 🧠 AI intent classification & smart query routing
 - ⚡ Real-time notifications via Socket.IO
