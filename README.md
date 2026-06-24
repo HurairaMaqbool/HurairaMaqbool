@@ -71,6 +71,7 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 - ⚡ Ultra-fast inference with Groq (Llama 3.3 / Mixtral)
 - ✅ Task management + math solver + live web search
 
+https://github.com/HurairaMaqbool/aria-ai-assistant
 ---
 
 ### 🔍 [AI RAG Agent — Hybrid Search Engine](https://github.com/HurairaMaqbool/ai-rag-agent)
@@ -84,13 +85,22 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 - 🧮 Built-in calculator and DuckDuckGo web search tools
 - ⚡ FastAPI backend — production-ready architecture
 
+https://github.com/HurairaMaqbool/ai-rag-agent
 ---
 
-### 📚 [LMS AI Chatbot](https://github.com/LMS-Project001/LMS)
-> Intelligent chatbot for a Learning Management System — dual-brain routing between LMS API and institute knowledge base.
+### 📚 [LMS AI Chatbot](https://github.com/HurairaMaqbool/LMS-CHATBOOT)
+> Full-stack AI assistant for students, teachers & admins — natural language access to marks, attendance & assignments.
 
-`Next.js` `TypeScript` `AI Integration` `PostgreSQL`
+`Node.js` `React.js` `Groq API` `Socket.IO` `JWT` `Redis` `Bull Queues` `FastAPI`
 
+Key highlights:
+- 🎓 Role-based access — Student / Teacher / Admin
+- 🧠 AI intent classification & smart query routing
+- ⚡ Real-time notifications via Socket.IO
+- 📊 Automated attendance warnings & broadcast messaging
+- 🔐 JWT auth + RBAC secure API design
+ 
+https://github.com/HurairaMaqbool/LMS-CHATBOOT
 ---
 
 ## 📊 GitHub Stats
