@@ -71,21 +71,27 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 - ⚡ Ultra-fast inference with Groq (Llama 3.3 / Mixtral)
 - ✅ Task management + math solver + live web search
 
-https://github.com/HurairaMaqbool/aria-ai-assistant
+ Live Demo : https://aria-ai-assistant-axw5b3axeeyofyshudo2qe.streamlit.app/?uid=user_cf092c53
+ Repo : https://github.com/HurairaMaqbool/aria-ai-assistant
 ---
 
-### 🔍 [AI RAG Agent — Hybrid Search Engine](https://github.com/HurairaMaqbool/ai-rag-agent)
-> Multi-tool RAG agent combining semantic + keyword search over PDFs with a FastAPI backend.
+### 🔍  NexusRAG — Bilingual Hybrid RAG Engine
 
-`LangChain` `FAISS` `BM25` `Groq` `FastAPI` `Sentence Transformers` `Python`
+Multi-tool RAG agent with hybrid (semantic + keyword) retrieval, bilingual Urdu/English support, and persistent memory — deployed as a live Streamlit app.
 
-**Key highlights:**
-- 📄 Ingests PDF, DOCX, TXT — chunked + embedded automatically
-- 🔍 Hybrid retrieval: FAISS (semantic) + BM25 (keyword) ensemble
-- 🧮 Built-in calculator and DuckDuckGo web search tools
-- ⚡ FastAPI backend — production-ready architecture
+LangChain LangGraph FAISS BM25 ChromaDB Groq Streamlit FastAPI Sentence Transformers Python
+Key highlights:
 
-https://github.com/HurairaMaqbool/ai-rag-agent
+📄 Ingests PDF, DOCX, TXT — chunked + embedded automatically
+🔍 Hybrid retrieval: FAISS (semantic) + BM25 (keyword) ensemble for higher accuracy
+🌐 Bilingual support — handles queries and responses in Urdu and English
+🧠 Persistent conversation memory via ChromaDB + LangGraph state management
+🧮 Built-in calculator and DuckDuckGo web search tools
+⚡ Production architecture — FastAPI backend, deployed live on Streamlit Cloud
+
+🔗 Live Demo: https://ai-rag-agent-8vfrcjngsjtppsrm2appwsc.streamlit.app/
+🔗 Repo: https://github.com/HurairaMaqbool/NexusRAG
+
 ---
 
 ### 📚 [LMS AI Chatbot](https://github.com/HurairaMaqbool/LMS-CHATBOOT)
