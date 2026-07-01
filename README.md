@@ -60,6 +60,24 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ## 🚀 Featured Projects
 
+### 🧭 [CodeNavigator — Agentic Codebase Onboarding Agent](https://github.com/HurairaMaqbool/CodeNavigator)
+> Production-grade RAG agent that ingests any Git repository, builds a triple index (semantic + keyword + call graph), and answers precise, citation-verified questions about any codebase in seconds.
+
+`LangChain` `FastAPI` `Streamlit` `ChromaDB` `BM25` `NetworkX` `Tree-sitter` `Groq` `SentenceTransformers` `Ragas` `Python`
+
+**Key highlights:**
+- 🔬 AST-level chunking via Tree-sitter — logic is never split mid-function
+- 🕸️ Graph-augmented retrieval — NetworkX call graph for caller/callee traversal (3-hop BFS)
+- 🛡️ Hallucination Guard — every citation validated against the index; responses gated below confidence 4.0/10
+- ⚡ Semantic answer cache — 95% similarity threshold, repeat questions served in milliseconds
+- 🔄 Webhook auto-sync — HMAC-verified GitHub webhooks trigger re-ingestion on every push
+- 📊 Auto-generates Mermaid call-graph diagrams rendered live in the UI
+- 🧪 Ragas evaluation suite — Faithfulness, Answer Relevancy, Context Precision, Context Recall
+
+🔗 Repo: https://github.com/HurairaMaqbool/CodeNavigator
+
+---
+
 ### 🤖 [Aria — Bilingual AI Personal Assistant](https://github.com/HurairaMaqbool/aria-ai-assistant)
 > LangGraph-powered conversational agent with persistent memory, real-time web search, and Urdu/English bilingual support.
 
@@ -94,23 +112,7 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ---
 
-### 🧭 [CodeNavigator — Agentic Codebase Onboarding Agent](https://github.com/HurairaMaqbool/CodeNavigator)
-> Production-grade RAG agent that ingests any Git repository, builds a triple index (semantic + keyword + call graph), and answers precise, citation-verified questions about any codebase in seconds.
 
-`LangChain` `FastAPI` `Streamlit` `ChromaDB` `BM25` `NetworkX` `Tree-sitter` `Groq` `SentenceTransformers` `Ragas` `Python`
-
-**Key highlights:**
-- 🔬 AST-level chunking via Tree-sitter — logic is never split mid-function
-- 🕸️ Graph-augmented retrieval — NetworkX call graph for caller/callee traversal (3-hop BFS)
-- 🛡️ Hallucination Guard — every citation validated against the index; responses gated below confidence 4.0/10
-- ⚡ Semantic answer cache — 95% similarity threshold, repeat questions served in milliseconds
-- 🔄 Webhook auto-sync — HMAC-verified GitHub webhooks trigger re-ingestion on every push
-- 📊 Auto-generates Mermaid call-graph diagrams rendered live in the UI
-- 🧪 Ragas evaluation suite — Faithfulness, Answer Relevancy, Context Precision, Context Recall
-
-🔗 Repo: https://github.com/HurairaMaqbool/CodeNavigator
-
----
 
 ### 📚 [LMS AI Chatbot](https://github.com/HurairaMaqbool/LMS-CHATBOOT)
 > Full-stack AI assistant for students, teachers & admins — natural language access to marks, attendance & assignments.
