@@ -11,7 +11,7 @@
 
 ### AI Engineer · LangChain · LangGraph · Multi-Agent Systems · RAG
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hurairamaqbool)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/huraira-maqbool-b696a5277)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hurairac37@gmail.com)
 [![Fiverr](https://img.shields.io/badge/Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://fiverr.com/huraira_maqbool)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HurairaMaqbool)
@@ -25,9 +25,9 @@
 I build **production-grade AI systems** — from multi-agent pipelines to RAG architectures and conversational AI.  
 My focus is on systems that actually work in the real world: reliable, fast, and deployable.
 
-- 🔭 Currently building: **Multi-Agent AI systems** with LangGraph + CrewAI  
-- ⚡ Speciality: **Hybrid RAG** (FAISS + BM25), agentic workflows, LLM integration  
-- 🌍 Open to: **Remote AI Engineering roles & freelance projects**  
+- 🔭 Currently building: **Multi-Agent AI systems** with LangGraph + CrewAI
+- ⚡ Speciality: **Hybrid RAG** (FAISS + BM25), agentic workflows, LLM integration
+- 🌍 Open to: **Remote AI Engineering roles & freelance projects**
 - 📫 Reach me: **hurairac37@gmail.com**
 
 ---
@@ -67,31 +67,48 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 **Key highlights:**
 - 🧠 Persistent memory via ChromaDB vector store
-- 🌍 Auto-detects Urdu & English — responds in same language  
+- 🌍 Auto-detects Urdu & English — responds in same language
 - ⚡ Ultra-fast inference with Groq (Llama 3.3 / Mixtral)
 - ✅ Task management + math solver + live web search
 
- Live Demo : https://aria-ai-assistant-axw5b3axeeyofyshudo2qe.streamlit.app/?uid=user_cf092c53
----  
- Repo : https://github.com/HurairaMaqbool/aria-ai-assistant
+🔗 Live Demo: https://aria-ai-assistant-axw5b3axeeyofyshudo2qe.streamlit.app/?uid=user_cf092c53  
+🔗 Repo: https://github.com/HurairaMaqbool/aria-ai-assistant
+
 ---
 
-### 🔍  NexusRAG — Bilingual Hybrid RAG Engine
+### 🔍 [NexusRAG — Bilingual Hybrid RAG Engine](https://github.com/HurairaMaqbool/NexusRAG)
+> Multi-tool RAG agent with hybrid (semantic + keyword) retrieval, bilingual Urdu/English support, and persistent memory — deployed as a live Streamlit app.
 
-Multi-tool RAG agent with hybrid (semantic + keyword) retrieval, bilingual Urdu/English support, and persistent memory — deployed as a live Streamlit app.
+`LangChain` `LangGraph` `FAISS` `BM25` `ChromaDB` `Groq` `Streamlit` `FastAPI` `Sentence Transformers` `Python`
 
-LangChain LangGraph FAISS BM25 ChromaDB Groq Streamlit FastAPI Sentence Transformers Python
-Key highlights:
+**Key highlights:**
+- 📄 Ingests PDF, DOCX, TXT — chunked + embedded automatically
+- 🔍 Hybrid retrieval: FAISS (semantic) + BM25 (keyword) ensemble for higher accuracy
+- 🌐 Bilingual support — handles queries and responses in Urdu and English
+- 🧠 Persistent conversation memory via ChromaDB + LangGraph state management
+- 🧮 Built-in calculator and DuckDuckGo web search tools
+- ⚡ Production architecture — FastAPI backend, deployed live on Streamlit Cloud
 
-📄 Ingests PDF, DOCX, TXT — chunked + embedded automatically
-🔍 Hybrid retrieval: FAISS (semantic) + BM25 (keyword) ensemble for higher accuracy
-🌐 Bilingual support — handles queries and responses in Urdu and English
-🧠 Persistent conversation memory via ChromaDB + LangGraph state management
-🧮 Built-in calculator and DuckDuckGo web search tools
-⚡ Production architecture — FastAPI backend, deployed live on Streamlit Cloud
-
-🔗 Live Demo: https://ai-rag-agent-8vfrcjngsjtppsrm2appwsc.streamlit.app/
+🔗 Live Demo: https://ai-rag-agent-8vfrcjngsjtppsrm2appwsc.streamlit.app/  
 🔗 Repo: https://github.com/HurairaMaqbool/NexusRAG
+
+---
+
+### 🧭 [CodeNavigator — Agentic Codebase Onboarding Agent](https://github.com/HurairaMaqbool/CodeNavigator)
+> Production-grade RAG agent that ingests any Git repository, builds a triple index (semantic + keyword + call graph), and answers precise, citation-verified questions about any codebase in seconds.
+
+`LangChain` `FastAPI` `Streamlit` `ChromaDB` `BM25` `NetworkX` `Tree-sitter` `Groq` `SentenceTransformers` `Ragas` `Python`
+
+**Key highlights:**
+- 🔬 AST-level chunking via Tree-sitter — logic is never split mid-function
+- 🕸️ Graph-augmented retrieval — NetworkX call graph for caller/callee traversal (3-hop BFS)
+- 🛡️ Hallucination Guard — every citation validated against the index; responses gated below confidence 4.0/10
+- ⚡ Semantic answer cache — 95% similarity threshold, repeat questions served in milliseconds
+- 🔄 Webhook auto-sync — HMAC-verified GitHub webhooks trigger re-ingestion on every push
+- 📊 Auto-generates Mermaid call-graph diagrams rendered live in the UI
+- 🧪 Ragas evaluation suite — Faithfulness, Answer Relevancy, Context Precision, Context Recall
+
+🔗 Repo: https://github.com/HurairaMaqbool/CodeNavigator
 
 ---
 
@@ -106,8 +123,9 @@ Key highlights:
 - ⚡ Real-time notifications via Socket.IO
 - 📊 Automated attendance warnings & broadcast messaging
 - 🔐 JWT auth + RBAC secure API design
- 
-https://github.com/HurairaMaqbool/LMS-CHATBOOT
+
+🔗 Repo: https://github.com/HurairaMaqbool/LMS-CHATBOOT
+
 ---
 
 ## 📊 GitHub Stats
