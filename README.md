@@ -22,7 +22,7 @@
 
 ## 🧠 About Me
 
-I build **production-grade AI systems** — from multi-agent pipelines to RAG architectures and conversational AI.  
+I build **production-grade AI systems** — from multi-agent pipelines to RAG architectures and conversational AI.
 My focus is on systems that actually work in the real world: reliable, fast, and deployable.
 
 - 🔭 Currently building: **Multi-Agent AI systems** with LangGraph + CrewAI
@@ -34,23 +34,23 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ## 🛠️ Tech Stack
 
-**AI/LLM Frameworks**  
+**AI/LLM Frameworks**
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-FF6B35?style=flat-square&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/CrewAI-6C3483?style=flat-square&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
-**Vector Databases & Search**  
+**Vector Databases & Search**
 ![FAISS](https://img.shields.io/badge/FAISS-0057B7?style=flat-square&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF4500?style=flat-square&logoColor=white)
 ![BM25](https://img.shields.io/badge/BM25_Hybrid_Search-2ECC71?style=flat-square&logoColor=white)
 
-**LLM Providers**  
+**LLM Providers**
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
-**Backend & Deployment**  
+**Backend & Deployment**
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -60,21 +60,26 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ## 🚀 Featured Projects
 
-### 🧭 [CodeNavigator — Agentic Codebase Onboarding Agent](https://github.com/HurairaMaqbool/CodeNavigator)
-> Production-grade RAG agent that ingests any Git repository, builds a triple index (semantic + keyword + call graph), and answers precise, citation-verified questions about any codebase in seconds.
+### 🧭 [CodeNavigator — Agentic Codebase Onboarding Agent](https://github.com/HurairaMaqbool/codebase-onboarding-agent)
+> Agentic RAG system that ingests any Git repository, builds a triple index (dense embeddings + BM25 keyword + NetworkX call graph), and answers codebase questions with citations verified against the actual source before they're shown to you — not confident-sounding guesses.
 
-`LangChain` `FastAPI` `Streamlit` `ChromaDB` `BM25` `NetworkX` `Tree-sitter` `Groq` `SentenceTransformers` `Ragas` `Python`
+`FastAPI` `Next.js` `ChromaDB` `BM25` `NetworkX` `Tree-sitter` `Groq` `PostgreSQL` `RAGAS` `Python`
 
 **Key highlights:**
-- 🔬 AST-level chunking via Tree-sitter — logic is never split mid-function
-- 🕸️ Graph-augmented retrieval — NetworkX call graph for caller/callee traversal (3-hop BFS)
-- 🛡️ Hallucination Guard — every citation validated against the index; responses gated below confidence 4.0/10
-- ⚡ Semantic answer cache — 95% similarity threshold, repeat questions served in milliseconds
-- 🔄 Webhook auto-sync — HMAC-verified GitHub webhooks trigger re-ingestion on every push
+- 🔄 Deterministic FSM agent loop — `PLAN → ACT → OBSERVE → DECIDE → VERIFY → RESPOND` — not a free-form agent
+- 🕸️ Graph-augmented retrieval — NetworkX call graph for caller/callee traversal
+- 🛡️ Hallucination Guard — every citation checked against real file/line bounds; low-confidence answers are gated with a safe fallback
+- 🔀 Hybrid retrieval — ChromaDB + BM25 fused via Reciprocal Rank Fusion (RRF)
 - 📊 Auto-generates Mermaid call-graph diagrams rendered live in the UI
-- 🧪 Ragas evaluation suite — Faithfulness, Answer Relevancy, Context Precision, Context Recall
+- 🧪 Live RAGAS evaluation dashboard — every run tracked, not just a single reported score
 
-🔗 Repo: https://github.com/HurairaMaqbool/CodeNavigator
+**Verified metrics (from the live evaluation dashboard):**
+- 93% (14/15) passing on golden-set regression CI
+- 0.67 mean Precision@3
+- 588 indexed code chunks, 0/15 answers gated
+- RAGAS faithfulness — actively being tuned, tracked transparently run-over-run
+
+🔗 Repo: https://github.com/HurairaMaqbool/codebase-onboarding-agent
 
 ---
 
@@ -89,7 +94,9 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 - ⚡ Ultra-fast inference with Groq (Llama 3.3 / Mixtral)
 - ✅ Task management + math solver + live web search
 
-🔗 Live Demo: https://aria-ai-assistant-axw5b3axeeyofyshudo2qe.streamlit.app/?uid=user_cf092c53  
+**Verified metrics:** 4.00/5.0 RAGAS eval score · 43 CI tests passing · $0.00244 avg cost/query
+
+🔗 Live Demo: https://aria-ai-assistant-axw5b3axeeyofyshudo2qe.streamlit.app/?uid=user_cf092c53
 🔗 Repo: https://github.com/HurairaMaqbool/aria-ai-assistant
 
 ---
@@ -107,12 +114,10 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 - 🧮 Built-in calculator and DuckDuckGo web search tools
 - ⚡ Production architecture — FastAPI backend, deployed live on Streamlit Cloud
 
-🔗 Live Demo: https://ai-rag-agent-8vfrcjngsjtppsrm2appwsc.streamlit.app/  
+🔗 Live Demo: https://ai-rag-agent-8vfrcjngsjtppsrm2appwsc.streamlit.app/
 🔗 Repo: https://github.com/HurairaMaqbool/NexusRAG
 
 ---
-
-
 
 ### 📚 [LMS AI Chatbot](https://github.com/HurairaMaqbool/LMS-CHATBOOT)
 > Full-stack AI assistant for students, teachers & admins — natural language access to marks, attendance & assignments.
@@ -159,7 +164,7 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ```
 Multi-Agent Orchestration  →  LangGraph + CrewAI
-Production RAG Evaluation  →  RAGAS Framework  
+Production RAG Evaluation  →  RAGAS Framework
 LLM Fine-tuning            →  LoRA / QLoRA
 Cloud Deployment           →  Docker + CI/CD Pipelines
 ```
@@ -168,7 +173,7 @@ Cloud Deployment           →  Docker + CI/CD Pipelines
 
 <div align="center">
 
-**Open for remote AI Engineering roles & freelance projects**  
+**Open for remote AI Engineering roles & freelance projects**
 📧 hurairac37@gmail.com
 
 ![Profile Views](https://komarev.com/ghpvc/?username=HurairaMaqbool&color=blueviolet&style=flat-square)
