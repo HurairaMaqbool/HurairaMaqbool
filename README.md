@@ -79,7 +79,7 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 - 588 indexed code chunks, 0/15 answers gated
 - RAGAS faithfulness — actively being tuned, tracked transparently run-over-run
 
-🔗 Repo: https://github.com/HurairaMaqbool/codebase-onboarding-agent
+🔗 Repo:https://github.com/HurairaMaqbool/CodeNavigator
 
 ---
 
