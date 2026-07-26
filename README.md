@@ -60,26 +60,26 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ## 🚀 Featured Projects
 
-### 🧭 [CodeNavigator — Agentic Codebase Onboarding Agent](https://github.com/HurairaMaqbool/codebase-onboarding-agent)
-> Agentic RAG system that ingests any Git repository, builds a triple index (dense embeddings + BM25 keyword + NetworkX call graph), and answers codebase questions with citations verified against the actual source before they're shown to you — not confident-sounding guesses.
+### 🧭 [CodeNavigator — Agentic Graph-Augmented RAG for Codebase Onboarding](https://github.com/HurairaMaqbool/CodeNavigator)
+> Agentic RAG platform that ingests any Git repository, builds a triple index (dense embeddings + BM25 keyword + NetworkX call graph), and answers codebase questions through a deterministic FSM agent — every claim runs through a multi-layer verification firewall against the real file system, AST, and call graph before it's shown to you.
 
 `FastAPI` `Next.js` `ChromaDB` `BM25` `NetworkX` `Tree-sitter` `Groq` `PostgreSQL` `RAGAS` `Python`
 
 **Key highlights:**
 - 🔄 Deterministic FSM agent loop — `PLAN → ACT → OBSERVE → DECIDE → VERIFY → RESPOND` — not a free-form agent
-- 🕸️ Graph-augmented retrieval — NetworkX call graph for caller/callee traversal
-- 🛡️ Hallucination Guard — every citation checked against real file/line bounds; low-confidence answers are gated with a safe fallback
+- 🕸️ Graph-augmented retrieval — NetworkX call graph with BFS-proximity ranking for caller/callee traversal
+- 🛡️ Multi-layer verification firewall — structural, AST, and relationship grounding checks; hallucinated claims are blocked, not softened
 - 🔀 Hybrid retrieval — ChromaDB + BM25 fused via Reciprocal Rank Fusion (RRF)
-- 📊 Auto-generates Mermaid call-graph diagrams rendered live in the UI
-- 🧪 Live RAGAS evaluation dashboard — every run tracked, not just a single reported score
+- 📊 Auto-generates Mermaid call-graph diagrams rendered live in the Architecture Explorer
+- 🧪 Built-in RAGAS evaluation dashboard — every run tracked, including scores below target, not just a single flattering number
 
 **Verified metrics (from the live evaluation dashboard):**
-- 93% (14/15) passing on golden-set regression CI
-- 0.67 mean Precision@3
-- 588 indexed code chunks, 0/15 answers gated
-- RAGAS faithfulness — actively being tuned, tracked transparently run-over-run
+- 27/27 (100%) on the canonical adversarial suite — 0% hallucinations, 0% unexplained abstentions
+- 10/10 (100%) golden-set CI pass rate
+- 703 passed / 13 failed / 9 skipped across the full test suite
+- RAGAS faithfulness 0.55–0.59 and context recall ~0.49 — below the 0.70 target and actively being tuned, tracked transparently run-over-run
 
-🔗 Repo:https://github.com/HurairaMaqbool/CodeNavigator
+🔗 Repo: https://github.com/HurairaMaqbool/CodeNavigator
 
 ---
 
