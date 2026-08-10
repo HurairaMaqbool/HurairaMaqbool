@@ -83,6 +83,26 @@ My focus is on systems that actually work in the real world: reliable, fast, and
 
 ---
 
+### 🛡️ [ThreatMind — Autonomous Cyber Threat Intelligence Pipeline](https://github.com/HurairaMaqbool/ThreatMind)
+> 11-agent LangGraph pipeline that autonomously monitors security blogs and advisories, decides what's actually worth hunting for, and turns it into validated, multi-platform SIEM detections — running as a standing service with a live scheduler, not a one-off script.
+
+`LangGraph` `Groq` `ChromaDB` `FastAPI` `Streamlit` `pySigma` `Docker` `Python`
+
+**Key highlights:**
+- 🔗 11-stage pipeline — Triage → Discovery → Extraction → Threat Intel → Coverage Planner → RAG → Reasoning → KQL Generator → Validator (retry loop) → Coverage Critic → Report
+- 🧭 Dedicated Coverage Planner decides *what* to detect (behavioral vs. tool-artifact vs. indicator-only) before any query is generated, prioritizing detections that are hard for attackers to evade
+- 📚 RAG-grounded generation — retrieval against an authoritative Sentinel/Defender schema via ChromaDB, plus historical KQL and similar past threats for context
+- 🛠️ Self-correcting validator — auto-fixes known wrong-but-plausible column names (e.g. `CommandLine` → `ProcessCommandLine`) against the real schema before re-scoring
+- 🌐 Multi-platform output — validated KQL converts to Sigma, then to Splunk, QRadar, Elasticsearch, CrowdStrike, Wazuh, and SentinelOne
+- ⏰ Live scheduler crawls 10 threat-intel feeds on an interval, dedupes seen articles via ChromaDB, and pushes Slack/email alerts for HIGH/CRITICAL findings
+- 🖥️ REST API (FastAPI) + 5-page Streamlit SOC dashboard, deployable via Docker Compose
+
+Built in collaboration with Ahmad Shabbir.
+
+🔗 Repo: https://github.com/HurairaMaqbool/ThreatMind
+
+---
+
 ### 🤖 [Aria — Bilingual AI Personal Assistant](https://github.com/HurairaMaqbool/aria-ai-assistant)
 > LangGraph-powered conversational agent with persistent memory, real-time web search, and Urdu/English bilingual support.
 
